@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".QuizActiviity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="questions"
+            android:textAllCaps="true"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.1. India got independence in the year "
+                android:id="@+id/q1_p1"
+                android:layout_marginTop="16dp"
+                android:textSize="14sp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/q1_p1"
+                android:layout_toRightOf="@id/q1_p1"
+                android:hint=""
+                android:textSize="14sp"
+                android:id="@+id/q1_ans"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.2. Which among the following are states in India?"
+                android:textSize="14sp"
+                android:id="@+id/q2_p1"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q2_p1"
+                android:text="Andhra Pradesh"
+                android:textSize="14sp"
+                android:id="@+id/q2_p2"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q2_p2"
+                android:text="Delhi"
+                android:textSize="14sp"
+                android:id="@+id/q2_p3"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q2_p3"
+                android:text="Goa"
+                android:textSize="14sp"
+                android:id="@+id/q2_p4"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q2_p4"
+                android:text="Kerala"
+                android:textSize="14sp"
+                android:id="@+id/q2_p5"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.3. India has ____ states and ____ union territories."
+                android:textSize="14sp"
+                android:id="@+id/q3_p1"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/q3_p1"
+                android:id="@+id/radio_q3">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/q3_op1"
+                    android:text="25,7 respectively"
+                    android:textSize="14sp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/q3_op2"
+                    android:text="25,7 respectively"
+                    android:textSize="14sp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/q3_op3"
+                    android:text="25,7 respectively"
+                    android:textSize="14sp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/q3_op4"
+                    android:text="25,7 respectively"
+                    android:textSize="14sp"/>
+            </RadioGroup>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.4. Which amng the following is(are) capital(s) of South Africa?"
+                android:textSize="14sp"
+                android:id="@+id/q4_p1" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_p2"
+                android:layout_below="@id/q4_p1"
+                android:text="Cape Town"
+                android:textSize="14sp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_p3"
+                android:layout_below="@id/q4_p2"
+                android:text="Pretoria"
+                android:textSize="14sp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_p4"
+                android:layout_below="@id/q4_p3"
+                android:text="Bloemfontein"
+                android:textSize="14sp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_p5"
+                android:layout_below="@id/q4_p4"
+                android:text="Rawanda"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.5. Who is known as  the Iron Lady of Britain?"
+                android:id="@+id/q5_p1"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_q5"
+                android:orientation="vertical"
+                android:layout_below="@id/q5_p1">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boris Johnson"
+                    android:textSize="14sp"
+                    android:id="@+id/q5_op1"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theresa May"
+                    android:textSize="14sp"
+                    android:id="@+id/q5_op2"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donald Trump"
+                    android:textSize="14sp"
+                    android:id="@+id/q5_op3"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Margaret Thatcher"
+                    android:textSize="14sp"
+                    android:id="@+id/q5_op4"/>
+            </RadioGroup>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Submit button to check your score."
+            android:fontFamily="cursive"
+            android:textSize="14sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="submit"
+            android:onClick="submitAns"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="View Scoreboard"
+            android:onClick="viewSB"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="reset answers"
+            android:onClick="resetAns"/>
+
+
+    </LinearLayout>
+</ScrollView>

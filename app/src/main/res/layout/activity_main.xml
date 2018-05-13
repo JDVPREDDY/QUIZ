@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gk"
+            android:scaleType="centerCrop"
+            android:id="@+id/gk_image"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test your g.k"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="cursive"
+            android:textColor="#FAFAFA"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quiz"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="48dp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textSize="96sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:fontFamily="cursive"
+            android:textColor="#D50000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#CCFF90"
+            android:layout_margin="36dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enter your details"
+                android:textAllCaps="true"
+                android:fontFamily="cursive"
+                android:textColor="#311B92"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Name"
+            android:inputType="textCapWords"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="cursive"
+            android:textColor="#000000"
+            android:id="@+id/user_name"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:hint="E-mail Id"
+            android:fontFamily="cursive"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:id="@+id/user_mailId"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="start"
+            android:fontFamily="cursive"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000"
+            android:onClick="startQuiz"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="instructions:"
+            android:layout_gravity="left"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="true"
+            android:layout_marginTop="8dp"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Questions with checkboxes have multiple correct answers."
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Questions with "
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Questions with checkboxes have multiple correct answers."
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
