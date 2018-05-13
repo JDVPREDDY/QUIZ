@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ts24">24sp</dimen>
+    <dimen name="pad12">12dp</dimen>
+    <dimen name="pad48">48dp</dimen>
+    <dimen name="ts96">96sp</dimen>
+    <dimen name="pad36">36dp</dimen>
+    <dimen name="pad16">16dp</dimen>
+    <dimen name="pad8">8dp</dimen>
+    <dimen name="pad24">24dp</dimen>
+    <dimen name="ts18">18sp</dimen>
+    <dimen name="ts14">14sp</dimen>
+<dimen name="pad4">4dp</dimen>
+<dimen name="ts20">20sp</dimen>
+<dimen name="pad32">32dp</dimen>
+<dimen name="ts15">15sp</dimen>
+<dimen name="ts48">48sp</dimen>
+
+</resources>

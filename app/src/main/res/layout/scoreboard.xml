@@ -1,67 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".scoreBoard"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/scoreb_back"
+    tools:context=".scoreBoard">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="scoreboard"
-            android:textSize="48sp"
-            android:fontFamily="cursive"
-            android:textAllCaps="true"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/scoretitle_id"/>
+
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/scoretitle_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="cursive"
+                android:text="@string/scoreboard"
+                android:textAllCaps="true"
+                android:textSize="@dimen/ts48"
+                android:layout_marginTop="@dimen/pad16"
+                android:textColor="@color/colfinal"/>
+
+            <TextView
+                android:id="@+id/score_tv_id"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/scoretitle_id"
-                android:id="@+id/score_tv_id"
-                android:layout_margin="48dp"/>
+                android:layout_margin="@dimen/pad32"
+                android:textSize="@dimen/ts24"
+                android:fontFamily="cursive"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colortvfinal"/>
+
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/email_q_id"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/score_tv_id"
-                android:id="@+id/email_q_id"
-                android:text="Send scorecard to your Mailbox?"
-                android:textSize="24sp"/>
+
+                android:text="@string/quesfin"
+                android:textSize="@dimen/ts24"
+
+                android:textColor="@color/colqusfin"
+                android:layout_centerHorizontal="true"/>
+
             <RelativeLayout
+                android:id="@+id/yesno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/email_q_id"
-                android:layout_centerInParent="true"
-                android:id="@+id/yesno">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/mail_yes"
-                android:text="yes"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/mail_yes"
-                android:layout_toRightOf="@id/mail_yes"
-                android:id="@+id/mail_no"
-                android:text="no"
-                />
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/mail_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mailMe"
+                    android:text="@string/yes" />
+
+                <Button
+                    android:id="@+id/mail_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/mail_yes"
+                    android:layout_toRightOf="@id/mail_yes"
+                    android:onClick="noButton"
+                    android:text="@string/no" />
             </RelativeLayout>
-            <Button
+
+            <TextView
+                android:id="@+id/no_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/yesno"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/retake_id"
                 android:layout_centerInParent="true"
-                android:text="reset"
-                />
+                android:onClick="restart"
+                android:text="@string/restart" />
+
+            <Button
+                android:id="@+id/retake_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/no_content"
+                android:layout_centerInParent="true"
+                android:onClick="retake"
+                android:text="@string/retake" />
 
         </RelativeLayout>
     </LinearLayout>

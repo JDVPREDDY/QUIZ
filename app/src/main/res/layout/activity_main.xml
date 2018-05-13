@@ -21,106 +21,118 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="test your g.k"
+            android:text="@string/first_page"
             android:textAllCaps="true"
-            android:textSize="24sp"
+            android:textSize="@dimen/ts24"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/pad12"
             android:fontFamily="cursive"
-            android:textColor="#FAFAFA"/>
+            android:textColor="@color/color_first"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="quiz"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="48dp"
+            android:text="@string/title_main"
+            android:layout_marginTop="@dimen/pad48"
+            android:layout_marginBottom="@dimen/pad48"
             android:layout_gravity="center_horizontal"
             android:textAllCaps="true"
-            android:textSize="96sp"
+            android:textSize="@dimen/ts96"
             android:textStyle="bold"
             android:gravity="center_horizontal"
             android:fontFamily="cursive"
-            android:textColor="#D50000"/>
+            android:textColor="@color/title_color"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#CCFF90"
-            android:layout_margin="36dp">
+            android:background="@color/login_back"
+            android:layout_margin="@dimen/pad36">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="enter your details"
+                android:text="@string/enter_your_details"
                 android:textAllCaps="true"
                 android:fontFamily="cursive"
-                android:textColor="#311B92"
+                android:textColor="@color/loinco1"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="@dimen/pad16"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your Name"
+            android:hint="@string/Enter_your_Name"
             android:inputType="textCapWords"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="@dimen/pad16"
             android:fontFamily="cursive"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:id="@+id/user_name"
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:hint="E-mail Id"
+            android:layout_marginLeft="@dimen/pad16"
+            android:hint="@string/email_id"
             android:fontFamily="cursive"
             android:inputType="textEmailAddress"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/pad8"
             android:id="@+id/user_mailId"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="start"
+            android:text="@string/start"
             android:fontFamily="cursive"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:textColor="#000000"
+            android:layout_marginTop="@dimen/pad16"
+            android:layout_marginBottom="@dimen/pad16"
+            android:textColor="@color/black"
             android:onClick="startQuiz"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/ins_back"
+            android:layout_margin="@dimen/pad24">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="instructions:"
-            android:layout_gravity="left"
-            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/instructions"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/title_color"
             android:textAllCaps="true"
-            android:layout_marginTop="8dp"
             android:fontFamily="cursive"
-            android:textSize="18sp"
+
+
+            android:textSize="@dimen/ts18"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1.Questions with checkboxes have multiple correct answers."
-            android:textSize="14sp"
+            android:text="@string/ins1"
+            android:textSize="@dimen/ts14"
             android:fontFamily="sans-serif-light"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"
+           android:layout_margin="@dimen/pad8"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1.Questions with "
-            android:textSize="14sp"
+            android:text="@string/ins2"
+            android:textSize="@dimen/ts14"
             android:fontFamily="sans-serif-light"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/pad8"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1.Questions with checkboxes have multiple correct answers."
-            android:textSize="14sp"
+            android:text="@string/ins3"
+            android:textSize="@dimen/ts14"
             android:fontFamily="sans-serif-light"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/pad8"/>
 
-
+        </LinearLayout>
     </LinearLayout>
     </RelativeLayout>
 </ScrollView>
