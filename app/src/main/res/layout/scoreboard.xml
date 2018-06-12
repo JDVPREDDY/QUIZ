@@ -21,23 +21,23 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/pad16"
                 android:fontFamily="cursive"
                 android:text="@string/scoreboard"
                 android:textAllCaps="true"
-                android:textSize="@dimen/ts48"
-                android:layout_marginTop="@dimen/pad16"
-                android:textColor="@color/colfinal"/>
+                android:textColor="@color/colfinal"
+                android:textSize="@dimen/ts48" />
 
             <TextView
                 android:id="@+id/score_tv_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/scoretitle_id"
-                android:layout_margin="@dimen/pad32"
-                android:textSize="@dimen/ts24"
-                android:fontFamily="cursive"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/colortvfinal"/>
+                android:layout_margin="@dimen/pad32"
+                android:fontFamily="cursive"
+                android:textColor="@color/colortvfinal"
+                android:textSize="@dimen/ts24" />
 
             <TextView
                 android:id="@+id/email_q_id"
@@ -45,11 +45,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/score_tv_id"
 
+                android:layout_centerHorizontal="true"
                 android:text="@string/quesfin"
-                android:textSize="@dimen/ts24"
 
                 android:textColor="@color/colqusfin"
-                android:layout_centerHorizontal="true"/>
+                android:textSize="@dimen/ts24" />
 
             <RelativeLayout
                 android:id="@+id/yesno"

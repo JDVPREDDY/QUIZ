@@ -10,10 +10,9 @@
     <dimen name="pad24">24dp</dimen>
     <dimen name="ts18">18sp</dimen>
     <dimen name="ts14">14sp</dimen>
-<dimen name="pad4">4dp</dimen>
-<dimen name="ts20">20sp</dimen>
-<dimen name="pad32">32dp</dimen>
-<dimen name="ts15">15sp</dimen>
-<dimen name="ts48">48sp</dimen>
-
+    <dimen name="pad4">4dp</dimen>
+    <dimen name="ts20">20sp</dimen>
+    <dimen name="pad32">32dp</dimen>
+    <dimen name="ts15">15sp</dimen>
+    <dimen name="ts48">48sp</dimen>
 </resources>

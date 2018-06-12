@@ -10,15 +10,15 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class scoreBoard extends AppCompatActivity {
-    public static String  USER_NAME ="user_name";
+    public static String USER_NAME = "user_name";
     public static String USER_MAILID = "user_mailId";
-    public static String Q1_M ="q1_mark";
-    public static String Q2_M ="q2_mark";
-    public static String Q3_M ="q3_mark";
-    public static String Q4_M ="q4_mark";
-    public static String Q5_M ="q5_mark";
-    public static String TOTAL ="total";
-    public static String NOQ ="noq";
+    public static String Q1_M = "q1_mark";
+    public static String Q2_M = "q2_mark";
+    public static String Q3_M = "q3_mark";
+    public static String Q4_M = "q4_mark";
+    public static String Q5_M = "q5_mark";
+    public static String TOTAL = "total";
+    public static String NOQ = "noq";
     String user_name;
     String user_mailId;
     int q1_mark;
@@ -50,7 +50,7 @@ public class scoreBoard extends AppCompatActivity {
         q_num = user_score_packed.getInt(NOQ);
 
         TextView score_view = (TextView) findViewById(R.id.score_tv_id);
-        score_details = getString(R.string.ysi)+ total;
+        score_details = getString(R.string.ysi) + total;
 
         if (total == 0)
             grade = getString(R.string.poor);
@@ -63,39 +63,39 @@ public class scoreBoard extends AppCompatActivity {
         score_details = score_details + getString(R.string.ypi) + grade;
 
         if (q1_mark == 1) {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q1_sbc);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q1_sbc);
         } else {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q1_sbw);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q1_sbw);
         }
 
         if (q2_mark == 1) {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q2_sbc);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q2_sbc);
         } else {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q2_sbw);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q2_sbw);
         }
 
         if (q3_mark == 1) {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q3_sbc);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q3_sbc);
         } else {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q3_sbw);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q3_sbw);
         }
 
         if (q4_mark == 1) {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q4_sbc);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q4_sbc);
         } else {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q4_sbw);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q4_sbw);
         }
 
         if (q5_mark == 1) {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q5_sbc);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q5_sbc);
         } else {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.q5_sbw);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.q5_sbw);
         }
 
         if (total == 0) {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.newline)+getString(R.string.rema);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.newline) + getString(R.string.rema);
         } else {
-            score_details = score_details + getString(R.string.newline)+getString(R.string.newline)+getString(R.string.rema2);
+            score_details = score_details + getString(R.string.newline) + getString(R.string.newline) + getString(R.string.rema2);
         }
 
         score_view.setText(score_details);
@@ -107,7 +107,7 @@ public class scoreBoard extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse(getString(R.string.mailto))); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{user_mailId});
-        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.Scorefor) + user_name +getString(R.string.inQuizApp));
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.Scorefor) + user_name + getString(R.string.inQuizApp));
         intent.putExtra(Intent.EXTRA_TEXT, score_details + getString(R.string.lastm));
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);

@@ -1,138 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
+            android:id="@+id/gk_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/gk"
             android:scaleType="centerCrop"
-            android:id="@+id/gk_image"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/first_page"
-            android:textAllCaps="true"
-            android:textSize="@dimen/ts24"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/pad12"
-            android:fontFamily="cursive"
-            android:textColor="@color/color_first"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title_main"
-            android:layout_marginTop="@dimen/pad48"
-            android:layout_marginBottom="@dimen/pad48"
-            android:layout_gravity="center_horizontal"
-            android:textAllCaps="true"
-            android:textSize="@dimen/ts96"
-            android:textStyle="bold"
-            android:gravity="center_horizontal"
-            android:fontFamily="cursive"
-            android:textColor="@color/title_color"/>
+            android:src="@drawable/gk" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/login_back"
-            android:layout_margin="@dimen/pad36">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/enter_your_details"
-                android:textAllCaps="true"
-                android:fontFamily="cursive"
-                android:textColor="@color/loinco1"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/pad16"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/Enter_your_Name"
-            android:inputType="textCapWords"
-            android:layout_marginLeft="@dimen/pad16"
-            android:fontFamily="cursive"
-            android:textColor="@color/black"
-            android:id="@+id/user_name"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/pad16"
-            android:hint="@string/email_id"
-            android:fontFamily="cursive"
-            android:inputType="textEmailAddress"
-            android:layout_marginTop="@dimen/pad8"
-            android:id="@+id/user_mailId"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/start"
-            android:fontFamily="cursive"
-            android:layout_marginTop="@dimen/pad16"
-            android:layout_marginBottom="@dimen/pad16"
-            android:textColor="@color/black"
-            android:onClick="startQuiz"/>
+                android:layout_marginTop="@dimen/pad12"
+                android:fontFamily="cursive"
+                android:text="@string/first_page"
+                android:textAllCaps="true"
+                android:textColor="@color/color_first"
+                android:textSize="@dimen/ts24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/pad48"
+                android:layout_marginTop="@dimen/pad48"
+                android:fontFamily="cursive"
+                android:gravity="center_horizontal"
+                android:text="@string/title_main"
+                android:textAllCaps="true"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/ts96"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad36"
+                android:background="@color/login_back"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/pad16"
+                    android:fontFamily="cursive"
+                    android:text="@string/enter_your_details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/loinco1" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad16"
+                    android:fontFamily="cursive"
+                    android:hint="@string/Enter_your_Name"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/user_mailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad16"
+                    android:layout_marginTop="@dimen/pad8"
+                    android:fontFamily="cursive"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/pad16"
+                    android:layout_marginTop="@dimen/pad16"
+                    android:fontFamily="cursive"
+                    android:onClick="startQuiz"
+                    android:text="@string/start"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad24"
+                android:background="@color/ins_back"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="cursive"
+                    android:text="@string/instructions"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+
+
+                    android:textSize="@dimen/ts18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/pad8"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/ins1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/pad8"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/ins2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/pad8"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/ins3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14" />
+
+            </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/ins_back"
-            android:layout_margin="@dimen/pad24">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/instructions"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/title_color"
-            android:textAllCaps="true"
-            android:fontFamily="cursive"
-
-
-            android:textSize="@dimen/ts18"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ins1"
-            android:textSize="@dimen/ts14"
-            android:fontFamily="sans-serif-light"
-            android:textColor="@color/black"
-           android:layout_margin="@dimen/pad8"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ins2"
-            android:textSize="@dimen/ts14"
-            android:fontFamily="sans-serif-light"
-            android:textColor="@color/black"
-            android:layout_margin="@dimen/pad8"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ins3"
-            android:textSize="@dimen/ts14"
-            android:fontFamily="sans-serif-light"
-            android:textColor="@color/black"
-            android:layout_margin="@dimen/pad8"/>
-
-        </LinearLayout>
-    </LinearLayout>
     </RelativeLayout>
 </ScrollView>
